@@ -1,0 +1,114 @@
+.display-none {
+    display: none;
+}
+
+.three_steps {
+    width: 100%;
+    background: #000000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.three_steps p {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    max-width: 620px;
+    margin: auto;
+}
+
+.three_step_title {
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-size: clamp(8px, 6vw, 22px);
+    color: #ffffff;
+    padding: 10px 30px 10px 30px;
+    line-height: 1.2em;
+    text-align: center;
+    background-color: #412786;
+    font-weight: bold;
+    /* display: none */
+}
+
+.three_step_container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 30px;
+    gap: 30px;
+}
+
+.three_step_container>div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    text-align: center;
+    /*border: 1px solid #ffffff;*/
+    width: 100%;
+}
+
+.three_step_icon {
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: flex-start;
+    flex-direction: row;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #412786;
+    line-height: 1.2em;
+}
+
+.three_step_icon img {
+    width: 50px;
+    height: 50px;
+    max-width: max-content;
+}
+
+.three_step_copy {
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.2em;
+    text-align: left;
+    padding: 0px 0px 0px 15px;
+}
+
+.three_step_copy span {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #ffffff;
+    padding-bottom: 0.3em;
+}
+
+@media only screen and (max-width: 768px) {
+    .three_step_container {
+        flex-direction: column;
+    }
+    .three_step_container>div {
+        justify-content: flex-start;
+        align-self: flex-start;
+    }
+    /* .three_step_container{
+    max-width: 600px !important;
+    margin: auto;
+} */
+}

@@ -1,0 +1,87 @@
+.sticky_cta_container {
+    z-index: 1000000000;
+    display: none;
+    position: fixed;
+    left: 20px;
+    bottom: 10px;
+    width: 100%;
+    max-width: calc(100% - 40px);
+}
+
+.sticky_cta {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 4px solid #000000;
+    height: 80px;
+    background: radial-gradient(100% 5568.89% at 0 0, #c94d4b 0, #c9884b 100%), #c95e4b;
+    margin: 0px auto;
+}
+
+.sticky_cta_copy {
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-size: clamp(8px, 4vw, 32px);
+    color: #ffffff;
+    padding: 0.5em 1em;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+.sticky_cta_close_btn {
+    cursor: pointer;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.2s all;
+    will-change: auto;
+
+}
+
+.sticky_cta_btn {
+  
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    line-height: 1.2em;
+    border-radius: 6px;
+    margin-right: 18px;
+    padding: 0.6em 1.2em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    transition: 0.2s all;
+    will-change: transform;
+}
+
+.sticky_cta_btn:hover {
+    background-color: #454543;
+}
+
+.sticky_cta_close_btn:hover {
+    transform: scale(1.1)
+}

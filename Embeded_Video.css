@@ -1,0 +1,55 @@
+.embeded_video_title {
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-size: max(16px, min(4vw, 22px));
+    line-height: 1.2em;
+    color: white;
+    padding: 1em 30px 1em 30px;
+    text-align: center;
+}
+
+.embeded_video {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.embeded_video iframe {
+    position: absolute !important;
+    width: 100%;
+    /*height: 600px;*/
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.embeded_vimeo_video {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.embeded_vimeo_video iframe {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    /*aspect-ratio: 0.5;*/
+    /*
+  min-width: 100%;
+  min-height: 100%;*/
+    position: absolute;
+}
